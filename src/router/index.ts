@@ -52,7 +52,7 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/pages/examples/index.vue'),
         children: [
             {
-                path: "helloWorld",
+                path: "HelloWorld",
                 name: "HelloWorld",
                 meta: {
                     title: "hello-world",
@@ -62,7 +62,7 @@ const routes: Array<RouteRecordRaw> = [
                 component: () => import("@/pages/examples/HelloWorld/index.vue")
             },
             {
-                path: "handlingUserInput",
+                path: "HandlingUserInput",
                 name: "HandlingUserInput",
                 meta: {
                     title: "Handling-User-Input",
@@ -72,7 +72,7 @@ const routes: Array<RouteRecordRaw> = [
                 component: () => import("@/pages/examples/HandlingUserInput/index.vue")
             },
             {
-                path: "attributeBindings",
+                path: "AttributeBindings",
                 name: "AttributeBindings",
                 meta: {
                     title: "Attribute-Bindings",
@@ -82,7 +82,7 @@ const routes: Array<RouteRecordRaw> = [
                 component: () => import("@/pages/examples/AttributeBindings/index.vue")
             },
             {
-                path: "conditionalsAndLoops",
+                path: "ConditionalsAndLoops",
                 name: "ConditionalsAndLoops",
                 meta: {
                     title: "Conditionals-and-loops",
@@ -92,7 +92,7 @@ const routes: Array<RouteRecordRaw> = [
                 component: () => import("@/pages/examples/ConditionalsAndLoops/index.vue")
             },
             {
-                path: "formBindings",
+                path: "FormBindings",
                 name: "FormBindings",
                 meta: {
                     title: "Form-Bindings",
@@ -102,7 +102,7 @@ const routes: Array<RouteRecordRaw> = [
                 component: () => import("@/pages/examples/FormBindings/index.vue")
             },
             {
-                path: "simpleComponent",
+                path: "SimpleComponent",
                 name: "SimpleComponent",
                 meta: {
                     title: "Simple-Component",
@@ -112,7 +112,7 @@ const routes: Array<RouteRecordRaw> = [
                 component: () => import("@/pages/examples/SimpleComponent/index.vue")
             },
             {
-                path: "markdownEditor",
+                path: "MarkdownEditor",
                 name: "MarkdownEditor",
                 meta: {
                     title: "Markdown-Editor",
@@ -120,6 +120,66 @@ const routes: Array<RouteRecordRaw> = [
                     requireAuth: true
                 },
                 component: () => import("@/pages/examples/MarkdownEditor/index.vue")
+            },
+            {
+                path: "FetchingData",
+                name: "FetchingData",
+                meta: {
+                    title: "Fetching-Data",
+                    keepAlive: true,
+                    requireAuth: true
+                },
+                component: () => import("@/pages/examples/FetchingData/index.vue")
+            },
+            {
+                path: "GridWithSortAndFilter",
+                name: "GridWithSortAndFilter",
+                meta: {
+                    title: "Grid-With-Sort-And-Filter",
+                    keepAlive: true,
+                    requireAuth: true
+                },
+                component: () => import("@/pages/examples/GridWithSortAndFilter/index.vue")
+            },
+            {
+                path: "TreeView",
+                name: "TreeView",
+                meta: {
+                    title: "Tree-View",
+                    keepAlive: true,
+                    requireAuth: true
+                },
+                component: () => import("@/pages/examples/TreeView/index.vue")
+            },
+            {
+                path: "SVGGraph",
+                name: "SVGGraph",
+                meta: {
+                    title: "SVG-Graph",
+                    keepAlive: true,
+                    requireAuth: true
+                },
+                component: () => import("@/pages/examples/SVGGraph/index.vue")
+            },
+            {
+                path: "ModalwithTransitions",
+                name: "ModalwithTransitions",
+                meta: {
+                    title: "Modal-with-Transitions",
+                    keepAlive: true,
+                    requireAuth: true
+                },
+                component: () => import("@/pages/examples/ModalwithTransitions/index.vue")
+            },
+            {
+                path: "ListWithTransitions",
+                name: "ListWithTransitions",
+                meta: {
+                    title: "List-With-Transitions",
+                    keepAlive: true,
+                    requireAuth: true
+                },
+                component: () => import("@/pages/examples/ListWithTransitions/index.vue")
             }
         ]
     }
